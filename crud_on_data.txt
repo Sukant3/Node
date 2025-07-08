@@ -1,0 +1,184 @@
+users = [
+  {
+    "id": 1,
+    "name": "Alice Smith",
+    "email": "alice.smith@example.com",
+    "age": 30,
+    "isActive": true,
+    "address": {
+      "street": "123 Main St",
+      "state": "CA",
+      "zip": "90210"
+    },
+    "interests": ["reading", "hiking", "cooking"]
+  },
+  {
+    "id": 2,
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com",
+    "age": 24,
+    "isActive": false,
+    "address": {
+      "street": "456 Oak Ave",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "interests": ["gaming", "coding", "music"]
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "age": 35,
+    "isActive": true,
+    "address": {
+      "street": "789 Pine Ln",
+      "state": "TX",
+      "zip": "73301"
+    },
+    "interests": ["photography", "travel", "sports"]
+  },
+  {
+    "id": 4,
+    "name": "Diana Prince",
+    "email": "diana.prince@example.com",
+    "age": 28,
+    "isActive": true,
+    "address": {
+      "street": "101 Cedar Rd",
+      "state": "FL",
+      "zip": "33101"
+    },
+    "interests": ["swimming", "yoga", "meditation"]
+  },
+  {
+    "id": 5,
+    "name": "Eve Adams",
+    "email": "eve.adams@example.com",
+    "age": 42,
+    "isActive": false,
+    "address": {
+      "street": "202 Birch Dr",
+      "state": "WA",
+      "zip": "98101"
+    },
+    "interests": ["gardening", "knitting", "baking"]
+  },
+  {
+    "id": 6,
+    "name": "Frank White",
+    "email": "frank.white@example.com",
+    "age": 50,
+    "isActive": true,
+    "address": {
+      "street": "303 Elm Ct",
+      "state": "IL",
+      "zip": "60601"
+    },
+    "interests": ["fishing", "golf", "woodworking"]
+  },
+  {
+    "id": 7,
+    "name": "Grace Lee",
+    "email": "grace.lee@example.com",
+    "age": 22,
+    "isActive": true,
+    "address": {
+      "street": "404 Poplar Blvd",
+      "state": "GA",
+      "zip": "30303"
+    },
+    "interests": ["dancing", "singing", "drawing"]
+  },
+  {
+    "id": 8,
+    "name": "Henry Green",
+    "email": "henry.green@example.com",
+    "age": 38,
+    "isActive": false,
+    "address": {
+      "street": "505 Willow Way",
+      "state": "CO",
+      "zip": "80202"
+    },
+    "interests": ["climbing", "camping", "skiing"]
+  },
+  {
+    "id": 9,
+    "name": "Ivy Black",
+    "email": "ivy.black@example.com",
+    "age": 29,
+    "isActive": true,
+    "address": {
+      "street": "606 Maple St",
+      "state": "OR",
+      "zip": "97204"
+    },
+    "interests": ["writing", "poetry", "cafes"]
+  },
+  {
+    "id": 10,
+    "name": "Jack Taylor",
+    "email": "jack.taylor@example.com",
+    "age": 45,
+    "isActive": true,
+    "address": {
+      "street": "707 Spruce Ave",
+      "state": "AZ",
+      "zip": "85001"
+    },
+    "interests": ["hiking", "cycling", "photography"]
+  }
+]
+
+//let a=users.sort((a,b)=>a.address.zip.localeCompare(b.address.zip))
+//console.log(a)
+
+//var a=users.reduce((t,i)=>t+i.address.zip*1,0)
+//console.log(a/users.length)
+
+//var b=users.map(x=>x.address)
+//console.log(b)
+
+//var c=users.map(x=>x.interests)
+//console.log(c)
+
+//var d=users.filter(x=>x.interests includes"hiking" )
+//console.log(d)
+
+//var e=users.filter(x=>x.isActive=true)
+//console.log(e)
+
+//var f=users.find(x=>x.name=="Jack Taylor")
+//console.log(f)
+  
+//var data={
+//   id: 10,
+//   name: 'Jack Taylor',
+//   email: 'jack.taylor@example.com',
+//   age: 45,
+//   isActive: true,
+//   address: { street: '707 Spruce Ave', state: 'AZ', zip: '85001' },
+//   interests: [ 'hiking', 'cycling', 'photography' ]
+//}
+
+//users.push(data)
+
+
+//users=users.filter(x=>x.id!=7)
+//console.log(users)
+
+//users=users.filter(x=>![1,4,5].includes(x.id))
+//console.log(users)
+
+let user=users.find(x=>x.id==10);
+console.log(user)
+user.name="Ross Taylor";
+user.age=30;
+
+users=users.filter(x=>x.id!=10)
+users.push(user)
+
+console.log(users)
+
+
